@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* general properties */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+}
+
+:root {
+  /* primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+/* background layout properties */
+.container {
+  background-color: var(--Pale-blue);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* order summary card properties */
+
+.card {
+  width: 45rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-shadow: rgb(56, 41, 224, 0.3) 0px 10px 20px -3px,
+    rgb(56, 41, 224, 0.2) 0px 4px 10px -2px;
+}
+
+.contents {
+  padding: 3rem 2rem;
+}
+
+.topic,
+.summary {
+  text-align: center;
+}
+.topic {
+  color: var(--Dark-blue);
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 1.5rem 0;
+}
+
+.summary {
+  color: var(--Desaturated-blue);
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1rem 1rem 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.amount {
+  display: flex;
+  background-color: var(--Very-pale-blue);
+  border-radius: 1rem;
+  padding: 1rem;
+  align-items: center;
+  /* width: 38rem; */
+}
+
+.music-icon {
+  margin: 1rem 1.7rem;
+}
+.amt {
+  text-align: left;
+  width: auto;
+}
+.plan {
+  color: var(--Dark-blue);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.year-amt {
+  color: var(--Desaturated-blue);
+  font-size: 1.5rem;
+}
+
+.changes {
+  color: var(--Bright-blue);
+  padding-right: 1rem;
+  margin-left: 15rem;
+  font-size: 1.6rem;
+}
+.change:hover {
+  text-decoration: none;
+  color: rgb(56, 41, 224, 0.5);
+  transition: color 0.3s ease;
+}
+
+.payment {
+  display: block;
+  font-size: 1.8rem;
+  padding: 2rem 0;
+  text-align: center;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--Bright-blue);
+  color: #fff;
+  margin: 2.5rem 0;
+  /* box-shadow: 0 4px 3px 8px rgb(56, 41, 224); */
+  box-shadow: rgba(56, 41, 224, 0.3) 0px 13px 27px -2px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.payment:hover {
+  color: rgb(56, 41, 224, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.cancel-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--Desaturated-blue);
+  font-weight: 900;
+  font-size: 1.6rem;
+  padding-bottom: 1.5rem;
+}
+
+.cancel-link:hover {
+  color: var(--Dark-blue);
+  transition: color 0.3s ease;
+}
