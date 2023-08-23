@@ -2,10 +2,23 @@
 /* BELOW 1440px (Smaller desktops) */
 /**************************/
 
-@media (max-width: 32em) {
-  body {
-    font-size: 1.4rem;
+@media (max-width: 83em) {
+  .card {
+    width: 50rem;
   }
+
+  .summary {
+    line-height: 1.6;
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .changes {
+    margin-left: 8rem;
+  }
+}
+
+@media (max-width: 32em) {
   .container {
     background-image: url(../images/pattern-background-mobile.svg);
   }
@@ -33,7 +46,11 @@
   body {
     font-size: 1rem;
   }
+
+  .card {
+    max-width: 87%;
+  }
   .changes {
-    margin-left: 6rem;
+    margin-left: 4rem;
   }
 }

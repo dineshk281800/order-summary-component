@@ -14,6 +14,7 @@ html {
 body {
   font-family: "Red Hat Display", sans-serif;
   font-size: 1.6rem;
+  text-align: center;
 }
 
 :root {
@@ -56,10 +57,10 @@ body {
   padding: 3rem 2rem;
 }
 
-.topic,
+/* .topic,
 .summary {
   text-align: center;
-}
+} */
 .topic {
   color: var(--Dark-blue);
   font-size: 3rem;
@@ -81,7 +82,6 @@ body {
   border-radius: 1rem;
   padding: 1rem;
   align-items: center;
-  /* width: 38rem; */
 }
 
 .music-icon {
@@ -107,14 +107,14 @@ body {
   padding-right: 1rem;
   margin-left: 15rem;
   font-size: 1.6rem;
+  transition: color 0.4s ease;
 }
-.change:hover {
+.changes:hover {
   text-decoration: none;
   color: rgb(56, 41, 224, 0.5);
-  transition: color 0.3s ease;
 }
 
-.payment {
+a.payment {
   display: block;
   font-size: 1.8rem;
   padding: 2rem 0;
@@ -124,14 +124,13 @@ body {
   background-color: var(--Bright-blue);
   color: #fff;
   margin: 2.5rem 0;
-  /* box-shadow: 0 4px 3px 8px rgb(56, 41, 224); */
+  transition: background-color 0.4s ease;
   box-shadow: rgba(56, 41, 224, 0.3) 0px 13px 27px -2px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.payment:hover {
-  color: rgb(56, 41, 224, 0.5);
-  transition: background-color 0.3s ease;
+a.payment:hover {
+  background-color: rgb(56, 41, 224, 0.5);
 }
 
 .cancel-link {
