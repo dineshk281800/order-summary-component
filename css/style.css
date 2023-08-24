@@ -34,7 +34,7 @@ body {
   background-image: url(../images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -53,8 +53,12 @@ body {
     rgb(56, 41, 224, 0.2) 0px 4px 10px -2px;
 }
 
+.img {
+  width: 100%;
+}
+
 .contents {
-  padding: 3rem 2rem;
+  padding: 0rem 2rem 1.5rem;
 }
 
 /* .topic,
@@ -99,7 +103,7 @@ body {
 
 .year-amt {
   color: var(--Desaturated-blue);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .changes {

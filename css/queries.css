@@ -2,7 +2,7 @@
 /* BELOW 1440px (Smaller desktops) */
 /**************************/
 
-@media (max-width: 83em) {
+@media (max-width: 84em) {
   .card {
     width: 50rem;
   }
@@ -14,7 +14,7 @@
   }
 
   .changes {
-    margin-left: 8rem;
+    margin-left: 20rem;
   }
 }
 
@@ -33,24 +33,46 @@
   }
   .summary {
     line-height: 1.6;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 1.3rem;
   }
 
+  .plan {
+    font-size: 1.3rem;
+  }
+
   .changes {
-    margin-left: 8rem;
+    margin-left: 10rem;
   }
 }
 
-@media (max-width: 28rem) {
-  body {
-    font-size: 1rem;
+@media (max-width: 28em) {
+  .card {
+    max-width: 87%;
   }
 
+  .plan {
+    font-size: 1.5rem;
+  }
+  .changes {
+    margin-left: 7rem;
+  }
+}
+
+@media (max-width: 25em) {
   .card {
     max-width: 87%;
   }
   .changes {
     margin-left: 4rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .card {
+    max-width: 87%;
+  }
+  .changes {
+    margin-left: 2.5rem;
   }
 }
